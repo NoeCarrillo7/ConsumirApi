@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export function Productos(){
     const[dataProductos, setDataProductos] = useState([]);
     useEffect(()=>{
-        axios.get("http://localhost:3000/productos/api/mostrarProductos")
+        axios.get("http://consumirapi-r9ub.onrender.com/productos/api/mostrarProductos")
         .then((respuesta)=>{
             console.log(respuesta);
             setDataProductos(respuesta.data);
